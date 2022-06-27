@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/Best of All/Script/main.js" defer></script>
-    <title>Library Work</title>
-    <!--<link rel="stylesheet" href="/Best of All/Style/carrinho.css">-->
-    <style>
-        .button{
+.button{
     border-style: none;
     height: 40px;
     padding: 6px 12px;
@@ -61,12 +50,7 @@ button.red{
     box-sizing: border-box;
 }
 
-:root{
-    --primary-color: #1a1918;
-    --secundary-color: #FFF1CC;
-    --shadow-color: #CCC;
-    --text-color: #FFF;
-}
+
 
 body{
     min-height: 100vh;
@@ -75,9 +59,7 @@ body{
     font-family: 'karla', sans-serif;
     position:relative;
 }
-h2{
-    color: white;
-}
+
 header{
     background-color: var(--primary-color);
     height: 70px;
@@ -118,8 +100,6 @@ footer{
     }
     .header-title{
         font-size: 1.5rem;
-        background-color: #1a1918;
-        color: #FFF;
     }
 
     main{
@@ -238,8 +218,7 @@ footer{
 
 .records th{
     height: 50px;
-    color: white;
-    background-color: var(--primary-color);
+    background-color: black;
     padding-left: 20px;
     font-size: 1.2rem;    
 }
@@ -283,54 +262,3 @@ footer{
         background-color: inherit;
     }
 }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h1 class="header-title">Ficha de Leitura</h1>
-    </header>
-    <main>
-        <button type="button" class="button blue mobile" id="cadastrarCliente">Registrar</button>
-        <table id="tableClient" class="records">
-            <thead>
-                <tr>
-                    <th>Título</th>
-                    <th>Autor</th>
-                    <th>Editora</th>
-                    <th>Gênero Literário</th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
-        <div class="modal" id="modal">
-            <div class="modal-content">
-                <header class="modal-header">
-                    <h2>Informações do Livro</h2>
-                    <span class="modal-close" id="modalClose">&#10006;</span>
-                </header>
-                <form id="form" class="modal-form">
-                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Título"
-                        required>
-                    <input type="text" id="autor" class="modal-field" placeholder="Autor" required>
-                    <input type="text" id="celular" class="modal-field" placeholder="Editora" required>
-                    <input type="text" id="cidade" class="modal-field" placeholder="Gênero Literário" required>
-                </form>
-                <footer class="modal-footer">
-                    <button id="salvar" class="button green">Salvar</button>
-                    <button id="cancelar" class="button blue">Cancelar</button>
-                </footer>
-            </div>
-        </div>
-    </main>
-    <a href="home.php">
-        <button class="button blue">Voltar para home</button>
-        </a>
-    <footer>
-        Copyright &copy; Library Work
-    </footer>
-</body>
-
-</html>

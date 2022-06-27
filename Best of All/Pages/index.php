@@ -201,7 +201,7 @@ span {
     <div class="modal">
       <div id="main-container">
     <h1>Entrar no site</h1>
-    <form id="register-form" action="">
+    <form id="register-form" action="home.php">
       <div class="full-box">
         <label for="email">E-mail</label>
         <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
@@ -240,7 +240,9 @@ span {
            <h1 class="titulo">Alugue seu livro</h1>
            <h2 class="sub_titulo">Library Work</h2>
            <div class="botoes">
-               <button class="n-overlay" onclick="openModal()">Entrar</button>
+             <a href="cadastro.html">
+             <button class="n-overlay" onclick="openModal()">Entrar</button>
+             </a>
                <a href="home.php">
                <button class="overlay">Alugar Livro</button>
                </a>
@@ -257,7 +259,10 @@ function openModal() {
 function closeModal() {
   modal.classList.remove('active')
 }
+
+
     </script>
     <script src="/Best of All/Script/cadastrar.js"></script>
+    
 </body>
 </html>
